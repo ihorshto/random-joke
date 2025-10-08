@@ -6,13 +6,20 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random joke App</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="app.css"/>
 </head>
 <body>
 
-<h1 id="joke-title">Random joke from joke API</h1>
-<p id="joke-question"></p>
-<p id="joke-answer"></p>
-<button id="generate-joke">Generate new joke</button>
+
+<div class="content">
+    <h1 id="joke-title">Random joke from joke API</h1>
+    <div id="joke-content">
+        <p id="joke-question"></p>
+        <p id="joke-answer"></p>
+    </div>
+    <button id="generate-joke" style="cursor: pointer;">Generate new joke</button>
+</div>
 
 <script src="index.js"></script>
 </body>
